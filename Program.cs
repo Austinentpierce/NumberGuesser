@@ -14,7 +14,6 @@ namespace NumberGuesser
                 int DifferenceOfRange = highestNumber - lowestNumber;
                 int Midpoint = DifferenceOfRange / 2;
                 int middleNumberValue = lowestNumber + Midpoint;
-                //int Count = 1;
                 bool Number = true;
                 while (lowestNumber <= highestNumber && Number)
                 {
@@ -32,12 +31,10 @@ namespace NumberGuesser
                     if (lowestNumber < highestNumber && numberGuessed == 2)
                     {
                         lowestNumber = middleNumberValue + 1;
-                        //Console.WriteLine("Your number is {0}", MidValue);
                     }
                     else if (lowestNumber < highestNumber && numberGuessed == 3)
                     {
                         highestNumber = middleNumberValue - 1;
-                        //Console.WriteLine("Your number is {0}", MidValue);
                     }
                 }
                 {
